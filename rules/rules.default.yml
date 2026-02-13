@@ -1,0 +1,257 @@
+ruleSet:
+  name: 'default'
+  version: '1.0.0'
+  languages: ['ar', 'en', 'fr', 'es', 'de']
+  global:
+    minScore: 1
+    negativeKeywords: ['giveaway', 'spam', 'subscribe', 'sub4sub', 'follow me']
+  categories:
+    bug:
+      score: 3
+      keywords:
+        en:
+          [
+            'bug',
+            'broken',
+            'error',
+            'crash',
+            'fix',
+            'issue',
+            'not working',
+            "doesn't work",
+            'glitch',
+          ]
+        ar: ['مشكلة', 'باظ', 'خطأ', 'بيهنج', 'كراش', 'مش شغال', 'صلّح', 'تهنيج', 'مش بيشتغل']
+        fr: ['bug', 'erreur', 'plante', 'crash', 'corriger', 'ne marche pas', 'cassé']
+        es: ['error', 'se cae', 'crash', 'arreglar', 'bug', 'no funciona', 'roto']
+        de: ['fehler', 'absturz', 'bug', 'kaputt', 'fix', 'funktioniert nicht', 'defekt']
+    performance:
+      score: 2
+      keywords:
+        en:
+          ['lag', 'slow', 'delay', 'fps', 'ping', 'loading', 'stuttering', 'frame drop', 'latency']
+        ar: ['لاجي', 'بطئ', 'تأخير', 'تحميل', 'فريمات', 'بينزل فريم', 'بيلاج', 'ثقيل']
+        fr: ['lent', 'latence', 'lag', 'fps', 'chargement', 'saccade', 'freeze']
+        es: ['lento', 'latencia', 'lag', 'carga', 'fps', 'se traba', 'congela']
+        de: ['langsam', 'latenz', 'lag', 'lädt', 'fps', 'ruckelt', 'einfriert']
+    ui_ux:
+      score: 2
+      keywords:
+        en:
+          [
+            'ui',
+            'ux',
+            'design',
+            'layout',
+            'overlay',
+            'button',
+            'responsive',
+            'interface',
+            'ugly',
+            'cluttered',
+          ]
+        ar: ['واجهة', 'تصميم', 'زر', 'مش واضح', 'ترتيب', 'أوفرلاي', 'مش متجاوب', 'شكلها وحش']
+        fr: ['interface', 'design', 'bouton', 'mise en page', 'overlay', 'moche', 'confus']
+        es: ['interfaz', 'diseño', 'botón', 'overlay', 'responsivo', 'feo', 'desordenado']
+        de: ['oberfläche', 'design', 'button', 'layout', 'overlay', 'hässlich', 'unübersichtlich']
+    feature_request:
+      score: 2
+      keywords:
+        en:
+          [
+            'add',
+            'please',
+            'can you',
+            'feature',
+            'would be nice',
+            'wish',
+            'suggestion',
+            'request',
+            'implement',
+          ]
+        ar: ['ضيف', 'ممكن', 'ينفع', 'عايز', 'خاصية', 'ياريت', 'اقتراح', 'نفسي']
+        fr: ['ajouter', "s'il te plaît", 'fonctionnalité', 'ce serait bien', 'suggestion']
+        es: ['agregar', 'por favor', 'función', 'sería bueno', 'sugerencia']
+        de: ['hinzufügen', 'bitte', 'funktion', 'wäre gut', 'vorschlag', 'wünsche']
+    integration:
+      score: 2
+      keywords:
+        en:
+          ['obs', 'discord', 'nginx', 'cloudflare', 'r2', 's3', 'api', 'websocket', 'ws', 'webhook']
+        ar: ['ديسكورد', 'أو بي إس', 'ويب سوكيت', 'سيرفر', 'كلودفلير', 'API']
+        fr: ['obs', 'discord', 'api', 'websocket', 'serveur', 'webhook']
+        es: ['obs', 'discord', 'api', 'websocket', 'servidor', 'webhook']
+        de: ['obs', 'discord', 'api', 'websocket', 'server', 'webhook']
+    development:
+      score: 2
+      keywords:
+        en:
+          [
+            'dev',
+            'devs',
+            'developer',
+            'developers',
+            'programmer',
+            'programmers',
+            'programming',
+            'coded',
+            'built',
+            'build',
+            'created',
+            'create',
+            'developed',
+            'develop',
+            'custom',
+            'custom-built',
+            'self-made',
+            'homebrew',
+            'tool',
+            'platform',
+            'website',
+            'web app',
+            'software',
+            'implementation',
+            'implemented',
+            'behind the scenes',
+            'production',
+            'setup',
+            'tech stack',
+            'backend',
+            'frontend',
+            'maker',
+            'creator',
+            'game master',
+            'format creator',
+            'underlying code',
+            'coded it',
+            'built it',
+            'made it',
+          ]
+        ar:
+          [
+            'مبرمج',
+            'مبرمجين',
+            'مطور',
+            'مطورين',
+            'برمجة',
+            'تطوير',
+            'صنع',
+            'أداة',
+            'منصة',
+            'موقع',
+            'تطبيق ويب',
+            'برنامج',
+            'تنفيذ',
+            'خلف الكواليس',
+            'إنتاج',
+            'إعدادات',
+            'واجهة خلفية',
+            'واجهة أمامية',
+            'صانع',
+            'مبتكر',
+            'مصمم الألعاب',
+            'صانع المحتوى',
+            'كود',
+            'برمج',
+            'صمم',
+          ]
+        fr:
+          [
+            'développeur',
+            'développeurs',
+            'programmeur',
+            'programmeurs',
+            'programmation',
+            'développement',
+            'codé',
+            'construit',
+            'créé',
+            'développé',
+            'personnalisé',
+            'fait maison',
+            'outil',
+            'plateforme',
+            'site web',
+            'application web',
+            'logiciel',
+            'implémentation',
+            'coulisses',
+            'production',
+            'configuration',
+            'backend',
+            'frontend',
+            'créateur',
+            'maître du jeu',
+            'créateur de format',
+            'code',
+          ]
+        es:
+          [
+            'desarrollador',
+            'desarrolladores',
+            'programador',
+            'programadores',
+            'programación',
+            'desarrollo',
+            'codificado',
+            'construido',
+            'creado',
+            'desarrollado',
+            'personalizado',
+            'hecho en casa',
+            'herramienta',
+            'plataforma',
+            'sitio web',
+            'aplicación web',
+            'software',
+            'implementación',
+            'detrás de escena',
+            'producción',
+            'configuración',
+            'backend',
+            'frontend',
+            'creador',
+            'maestro del juego',
+            'creador de formato',
+            'código',
+          ]
+        de:
+          [
+            'Entwickler',
+            'Entwicklerteam',
+            'Programmierer',
+            'Programmiererin',
+            'Programmierung',
+            'Entwicklung',
+            'codiert',
+            'programmiert',
+            'gebaut',
+            'erstellt',
+            'entwickelt',
+            'eigenes Tool',
+            'eigene Software',
+            'maßgeschneidert',
+            'selbst gemacht',
+            'Werkzeug',
+            'Plattform',
+            'Website',
+            'Web-App',
+            'Software',
+            'Implementierung',
+            'umgesetzt',
+            'hinter den Kulissen',
+            'Produktion',
+            'Setup',
+            'Tech-Stack',
+            'Backend',
+            'Frontend',
+            'Macher',
+            'Quizmaster',
+            'Formatschöpfer',
+            'Programm',
+            'Seite',
+            'App',
+            'Programmierarbeit',
+            'Aufwand',
+            'Entwicklungsarbeit',
+          ]
