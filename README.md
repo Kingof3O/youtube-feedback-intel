@@ -104,7 +104,7 @@ Examples:
 npm run cli -- sync channel --channelId UCDqwX3rguC2xrz3-ovEqLDCS --days 14 --maxVideos 50 --maxCommentsPerVideo 2000
 npm run cli -- sync video --videoId VIDEO_ID
 npm run cli -- sync videos --videoIds id1,id2,id3
-npm run cli -- sync range --channelId UCDqwX3rguC2xrz3-ovEqLDCS --from 2024-01-01 --to 2026-01-01 --maxVideos 500
+npm run cli -- sync range --channelId UCDqwX3rguC2xrz3-ovEqLDCS --from 2025-01-01 --to 2026-01-01 --maxVideos 500
 npm run cli -- classify channel --channelId UCDqwX3rguC2xrz3-ovEqLDCS
 npm run cli -- query --channelId UCDqwX3rguC2xrz3-ovEqLDCS --category bug --since 2026-01-01 --minLikes 2 --contains website
 npm run cli -- report --channelId UCDqwX3rguC2xrz3-ovEqLDCS --since 2026-01-01 --until 2026-02-01 --format md
