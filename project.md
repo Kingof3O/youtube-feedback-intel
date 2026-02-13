@@ -27,7 +27,7 @@ Hard requirements
 7) Open-source ready: MIT, README, CONTRIBUTING, lint, format, tests, CI workflow.
 
 Inputs (for testing only)
-- channelId: UCDppX9rguA9xrz3-ovMqLDQ
+- channelId: UCDqwX3rguC2xrz3-ovEqLDCS
 - YOUTUBE_API_KEY via env var only
 - MySQL credentials via env vars
 
