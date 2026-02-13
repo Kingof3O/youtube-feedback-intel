@@ -2,13 +2,11 @@
 
 Collect YouTube comments with the official YouTube Data API v3, classify multi-language feedback, and explore results through CLI, API, and web UI.
 
-## What It Includes
-- YouTube sync for channel, single video, multiple videos, and date ranges.
-- Rule-based classification for `ar`, `en`, `fr`, `es`, and `de`.
-- MySQL persistence with idempotent upserts.
-- Backend API (`/api/*`) used by the React frontend.
-- CLI (`ytfi`) for sync/classify/query/report/rules/demo-seed workflows.
-- MCP server tools for agent integrations.
+## Documentation
+- [Architecture Overview](docs/architecture.md)
+- [MCP Server & Configuration](docs/mcp.md)
+- [Seeding & Screenshots](docs/seeding-and-screenshots.md)
+- [License](docs/license.md)
 
 ## Tech Stack
 - Node.js 20+
@@ -130,9 +128,12 @@ Use deterministic fake data:
 npm run seed:demo -- --reset
 ```
 
-Detailed screenshot workflow is documented in `docs/seeding-and-screenshots.md`.
+Detailed screenshot workflow is documented in [Seeding and Screenshots](docs/seeding-and-screenshots.md).
 
 ## MCP Server
+The project provides a Model Context Protocol (MCP) server for agent integration.
+See [MCP Server Documentation](docs/mcp.md) for setup and usage instructions.
+
 Build and run:
 ```powershell
 npm run build
@@ -149,4 +150,4 @@ npm run seed:demo -- --reset
 ```
 
 ## License
-MIT (`LICENSE`)
+MIT. See [LICENSE](docs/license.md).
