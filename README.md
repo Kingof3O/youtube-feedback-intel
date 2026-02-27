@@ -1,6 +1,12 @@
 # YouTube Feedback Intel
 
+![YouTube Feedback Intel Logo](client/public/logo.png)
+
 Collect YouTube comments with the official YouTube Data API v3, classify multi-language feedback, and explore results through CLI, API, and web UI.
+
+## Branding
+- App logo file: `client/public/logo.png`
+- Frontend uses this logo in the sidebar and as the browser favicon.
 
 ## Documentation
 - [Architecture Overview](docs/architecture.md)
