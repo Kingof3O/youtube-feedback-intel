@@ -13,8 +13,8 @@ export function Layout() {
       <aside className={clsx('sidebar glass-panel', isMobileMenuOpen && 'open')}>
         <div className="sidebar-header">
           <div className="logo">
-            <div className="logo-icon">Intel</div>
-            <span className="logo-text">Feedback</span>
+            <img className="logo-image" src="/logo.png" alt="YouTube Feedback Intel" />
+            <span className="logo-text">Feedback Intel</span>
           </div>
           <button className="mobile-close" onClick={() => setIsMobileMenuOpen(false)}>
             <X size={24} />
